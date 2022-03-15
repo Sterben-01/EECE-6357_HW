@@ -1,0 +1,17 @@
+close all;
+clc;
+file = input('please input image name: ', 's');
+load(file);
+binim = load(file).binim;
+forcetype = input('please input process mode: ');
+std = load(file).std;
+support = load(file).support;
+Niter = load(file).Niter;
+nsample = load(file).nsample;
+alpha = load(file).alpha;
+beta = load(file).beta;
+gamma = load(file).gamma;
+extcoef = load(file).extcoef;
+balcoef = load(file).balcoef;
+itergvf = load(file).itergvf;
+snake_mainfunction(binim, forcetype, std, support, Niter, nsample, alpha, beta, gamma, extcoef, balcoef, itergvf);
